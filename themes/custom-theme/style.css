@@ -1,0 +1,273 @@
+/* Theme Name: Custom WordPress Theme */
+/* Version: 1.0.0 */
+/* Author: Gemma Gentles */
+/*********************
+COLOURS
+*********************/
+/* beige backgrounds */
+/* dark blue highlights and lines */
+/* off black footer */
+/* light black footer */
+/* dark grey */
+/* darker grey */
+/* grey */
+/*********************
+SIZES
+*********************/
+/*********************
+TYPOGRAPHY
+*********************/
+@font-face {
+  font-family: RobotoCondensed-Bold;
+  src: url("/wp-content/themes/custom-theme/fonts/RobotoCondensed-Bold.ttf") format("TrueType");
+}
+@font-face {
+  font-family: RobotoCondensed-Regular;
+  src: url("/wp-content/themes/custom-theme/fonts/RobotoCondensed-Regular.ttf") format("TrueType");
+}
+/*********************
+BREAKPOINTS
+*********************/
+/************************
+
+Example Usage:
+
+SCSS =
+
+h1 {
+    font-size: em(32);
+}
+
+Output CSS = 
+
+h1 {
+    font-size: 2em;
+}
+
+************************/
+.header__container {
+  width: 100%;
+  padding: 0 40px;
+  background: #094D8B;
+}
+.header__container li, .header__container a {
+  list-style-type: none;
+  color: white;
+  text-decoration: none;
+  padding: 20px;
+}
+.header__container li:hover, .header__container li:focus, .header__container a:hover, .header__container a:focus {
+  text-decoration: underline;
+}
+
+.intro-panel__wrapper {
+  text-align: center;
+  padding: 50px 40px;
+}
+@media (min-width: 64em) {
+  .intro-panel__wrapper {
+    padding: 80px 40px;
+  }
+}
+.intro-panel__heading {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding-bottom: 16px;
+  max-width: 860px;
+  margin: 0 auto;
+  color: #094D8B;
+}
+.intro-panel__heading:after {
+  content: "";
+  position: absolute;
+  bottom: -7px;
+  height: 2px;
+  background-color: #094D8B;
+  width: 48px;
+  right: calc(50% - 24px);
+  transform: translateY(-50%);
+}
+.intro-panel__paragraph {
+  padding-top: 50px;
+  max-width: 704px;
+  margin: 0 auto;
+}
+
+.banner-image {
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.footer {
+  margin-top: auto;
+  background: #040707;
+  padding: 22px 40px 64px;
+  text-align: center;
+  position: relative;
+}
+.footer__container {
+  max-width: 1120px;
+  margin: 0 auto;
+}
+@media (min-width: 64em) {
+  .footer__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+  }
+}
+@media (min-width: 97.5em) {
+  .footer__container {
+    padding: 22px 0;
+  }
+}
+.footer__copyright, .footer__credit {
+  font-size: 0.75em;
+  letter-spacing: 1.07px;
+  color: white;
+}
+
+#eu-cookie-bar {
+  padding: 20px;
+  font-family: RobotoCondensed-Regular !important;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: white;
+  overflow-x: hidden;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+section {
+  position: relative;
+}
+
+a[href^=tel] {
+  color: #29292B;
+  text-decoration: none;
+}
+
+.footer a[href^=tel] {
+  color: white;
+  text-decoration: none;
+}
+
+p,
+ul li {
+  font-size: 1em;
+  line-height: 28px;
+  letter-spacing: 0.55px;
+  font-family: RobotoCondensed-Regular;
+}
+
+body:not(.user-is-tabbing) button:focus,
+body:not(.user-is-tabbing) input:focus,
+body:not(.user-is-tabbing) select:focus,
+body:not(.user-is-tabbing) textarea:focus {
+  outline: none;
+}
+
+/*********************
+TYPOGRAPHY
+*********************/
+:root {
+  font-size: 1em;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: RobotoCondensed-Bold;
+  color: #4A4A50;
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 2.375em;
+  line-height: 50px;
+  letter-spacing: 1.08px;
+}
+@media (min-width: 64em) {
+  h1 {
+    font-size: 2.75em;
+    line-height: 68px;
+    letter-spacing: 2.08px;
+  }
+}
+
+h2 {
+  font-size: 1.875em;
+  letter-spacing: normal;
+  line-height: 48px;
+}
+@media (min-width: 87em) {
+  h2 {
+    font-size: 2.5em;
+    line-height: 52px;
+  }
+}
+
+h3 {
+  font-size: 1.75em;
+  letter-spacing: 1px;
+  line-height: 38px;
+}
+@media (min-width: 64em) {
+  h3 {
+    font-size: 2em;
+    line-height: 38px;
+  }
+}
+@media (min-width: 70em) {
+  h3 {
+    font-size: 3em;
+    line-height: 60px;
+    letter-spacing: 1.6px;
+  }
+}
+
+h4 {
+  font-size: 0.75em;
+  letter-spacing: 2.53px;
+  line-height: 20px;
+}
+@media (min-width: 70em) {
+  h4 {
+    font-size: 1em;
+  }
+}
+
+/*********************
+BUTTON
+*********************/
+.primary-button {
+  position: relative;
+  padding: 12px 30px;
+  font-family: RobotoCondensed-Regular;
+  font-size: 1.125em;
+  line-height: 26px;
+  letter-spacing: 1.5px;
+  text-decoration: none;
+  margin-top: 50px;
+  background-color: #094D8B;
+  color: white;
+  border-radius: 44px;
+  border: 0;
+  transition: background-color 1s ease-in;
+}
+.primary-button:hover, .primary-button:focus {
+  cursor: pointer;
+  background-color: #040707;
+}

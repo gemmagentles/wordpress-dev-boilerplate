@@ -1,0 +1,30 @@
+.footer {
+    margin-top: auto;
+    background: $tertiary-color;
+    padding: 22px 40px 64px;
+    text-align: center;
+    position: relative;
+
+    &__container {
+        max-width: $inner-site-width;
+        margin: 0 auto;
+
+        @include breakpoint(smalldesktop) {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            text-align: left;
+        }
+
+        @include breakpoint(xlargedesktop) {
+            padding: 22px 0;
+        }
+    }
+
+    &__copyright,
+    &__credit {
+        font-size: em(12);
+        letter-spacing: 1.07px;
+        color: white;
+    }
+}

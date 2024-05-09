@@ -1,0 +1,36 @@
+/*********************
+COLOURS
+*********************/
+
+$primary-color: #F6F5F2; /* beige backgrounds */
+$secondary-color: #094D8B; /* dark blue highlights and lines */
+$tertiary-color: #040707; /* off black footer */
+
+$quaternary-color: #29292B; /* light black footer */
+$heading-font-color: #4A4A50; /* dark grey */
+$font-color: #29292B; /* darker grey */
+$border-color: #979797; /* grey */
+
+/*********************
+SIZES
+*********************/
+
+$site-width: 1520px;
+$inner-site-width: 1120px;
+
+/*********************
+TYPOGRAPHY
+*********************/
+
+@font-face {
+    font-family: RobotoCondensed-Bold;
+    src: url("/wp-content/themes/custom-theme/fonts/RobotoCondensed-Bold.ttf") format("TrueType");
+}
+
+@font-face {
+    font-family: RobotoCondensed-Regular;
+    src: url("/wp-content/themes/custom-theme/fonts/RobotoCondensed-Regular.ttf") format("TrueType");
+}
+
+$heading-font-family: RobotoCondensed-Bold;
+$secondary-font-family: RobotoCondensed-Regular;
