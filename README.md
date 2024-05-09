@@ -21,8 +21,6 @@ Web dev boilerplate from Prcyxpress (refer to README-Prcyxpress.md if needing mo
 
 # How do I use this project? #
 
-# First time install: #
-
 **Step one** - clone this repo into the wp-content folder of your WordPress install
 
 **Step two** - cd themes/custom-theme
